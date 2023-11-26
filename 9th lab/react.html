@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+
+        function Random(temp = null){
+            if(temp === 0){
+                let arr = [];
+                arr.length = Math.floor(Math.random() * 100);
+                for (let i = 0; i <= arr.length - 1 ; i++){
+                arr[i] = Math.floor(Math.random() * 100);
+                }
+                return arr;
+            }
+            return Math.floor(Math.random() * 199 - 99);
+        }
+
+        function Temperature({t}){
+            if(t > 0){
+                return <><font color="red">{t}</font></>
+            }
+            return <><font color="blue">{t}</font></>
+        }
+        
+        function Square({num}) {
+            return num**2;
+        }
+
+        function Even({array}){
+        	return <>{array.filter((item) => {return item%2===0}).join(', ')}</>
+        }
+        
+        ReactDOM.render(<Square num = {Random()}/>, document.getElementById('Square'));
+        ReactDOM.render(<Even array = {Random(0)}/>, document.getElementById('EvenNums'));
+        ReactDOM.render(<Temperature t = {Random()}/>, document.getElementById('Temperature'));
+    </script>
+</head>
+<body>
+    <div id="Square"></div>
+    <div id="EvenNums"></div>
+    <div id="Temperature"></div>
+</body>
+</html>

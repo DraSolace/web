@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" type="image/gif" href="../Media/images/icon.ico">
+
+</head>
+<body>
+    <h1 style="text-align: center;">Список дел</h1>
+    <div class="Global Panel">
+    <div class="MainPanel">
+    <input class="NewTaskInput" type="text" placeholder="Новый элемент списка">
+    <button class="NewTaskButton">Создать</button>
+    <button class="ClearAllTasksButton">Очистить всё</button>
+    </div>
+    <div class="ScrollPanel">
+        <div class="TaskPanel">
+            <div> 
+            <i class="material-icons" id="Isdone">done</i>
+            </div>
+
+            <div>
+            <span id="TaskText"><s>Почистить картошку</s></span>
+            <div><sub>от 10.10.2023</sub></div>
+            </div>
+
+            <div>
+            <span class="TaskPanelButton" id="DoneButton"><i class="material-icons">close</i></span>
+            </div>
+
+            </div>
+
+            <div class="TaskPanel">
+                <div> 
+                <i class="material-icons" id="Isdone"></i>
+                </div>
+    
+                <div>
+                <span id="TaskText">Почистить кошку</span>
+                <div><sub>от 11.09.2023</sub></div>
+                </div>
+                
+                <div>
+                <span class="TaskPanelButton" id="DoneButton"><i class="material-icons">close</i></span>
+                </div>
+    
+                </div>
+        </div>
+    </div>
+    </div>
+    <div class="FooterPanel">
+    <footer>
+        <hr>
+        Copyright &copy
+    </footer>
+    </div>
+
+</body>
+</html>

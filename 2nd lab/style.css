@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto);
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #2f4f4f;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 12px;
+    background-color: #2f4f4f;
+}
+
+.GlobalPanel{
+    padding: 0%;
+    margin: 0;
+}
+
+.MainPanel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #2f4f4f;
+    text-align: center;
+}
+
+.NewTaskInput, .NewTaskButton, .ClearAllTasksButton{
+    font-family: 'Roboto Slab', sans-serif;
+    background-color: white; 
+    border: none;
+    margin: 3;
+    color: Black;
+    text-align: center, top;
+    font-size: 16px;
+    padding: 3px;
+    
+}
+
+.NewTaskButton{
+    background-color: green;
+    padding: 0%;
+}
+
+.ClearAllTasksButton{
+    background-color: red;
+    padding: 0;
+}
+
+.FooterPanel{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px; 
+    background-color: #2f4f4f;
+    text-align: center;
+}
+
+.ScrollPanel{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0px;
+    width: 70%;
+    height: 70%;
+    background-color: white;
+}
+
+.TaskPanel{
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    align-items: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: white;
+    user-select: none;
+}
+
+.material-icons{
+    margin: 5px;
+}
+
+.TaskPanelButton:hover{
+    cursor: pointer;
+}
+
+.TaskPanel:hover{
+    background-color: grey;
+}
