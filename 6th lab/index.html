@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>To-do list</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" type="image/gif" href="../Media/images/icon.ico">
+    
+</head>
+<body>
+    <header>
+        <h1 class="title">Заметки</h1>
+    </header>
+    <input class="num1" id="title" type="text">    
+    <button class="sub" id = "submit" type="submit" >Добавить</button>
+    <button class="sub" id = "Clear" type="Clear" >Очистить всё</button>
+    <input class="date" type="text" value="10-10-2010" id = "date" onfocus="(this.type='date')"> </input>
+    <ul id = "list" >
+    </ul>
+    <hr>
+    <div class="links">
+        <a class="link" id = "doneLink" href="#">Cделано<sub>(0)</sub></a>
+        <a class="link" id = "!doneLink" href="#"><sub>Не сделано(0)</sub></a>
+        <a class="link" id = "allLink" href="#"><sub>Все(0)</sub></a>
+    </div>
+
+</body>
+</html>
